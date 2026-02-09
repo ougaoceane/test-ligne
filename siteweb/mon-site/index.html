@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Web Personnelle</title>
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cfefff; /* bleu ciel */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff8c42; /* orange */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #f5e6cc; /* beige */
+            margin: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #ff8c42;
+        }
+
+        button {
+            background-color: #ff8c42;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e6762f;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bienvenue sur ma page personnelle</h1>
+</header>
+
+<section>
+    <h2>À propos de moi</h2>
+
+    <p>
+        Je m'appelle Ouga Lou Oune Joviale Oceane, diplômée d'un Master en Agriculture et Développement Durable
+        à l'Université Péléforo Gon Coulibaly de Korhogo.
+    </p>
+
+    <p>J'ai comme centres d’intérêt :</p>
+
+    <ul>
+        <li>Dessin</li>
+        <li>Cuisine</li>
+        <li>Technologie</li>
+        <li>Développement durable</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Ma passion</h2>
+
+    <p>
+        Ce qui me passionne est l'apprentissage, le savoir et l'innovation.
+        Récemment, après ma formation à Dynexafrique, j'ai découvert un amour particulier
+        pour les Data, le développement web ainsi que les métiers du STEM.
+    </p>
+</section>
+
+<section>
+    <h2>Surprise</h2>
+
+    <button onclick="changerMessage()">Clique ici</button>
+
+    <p id="message"></p>
+</section>
+
+
+<script>
+    function changerMessage() {
+        document.getElementById("message").innerHTML =
+            "Bravo ! mon site fonctionne parfaitement ";
+    }
+</script>
+
+</body>
+</html>
